@@ -115,7 +115,7 @@ FROM passengers2 WHERE first_trip_date IS NOT NULL
 AS VARCHAR) + '%'
 AS NOTLOYAL_Conversion_rate_passengers
 
---5. average trips per passenger for all passengers £¿£¿
+--5. average trips per passenger for all passengers Â£Â¿Â£Â¿
 SELECT SUM(distance)/COUNT(DISTINCT passenger_id)
 AS AVG_distance, SUM(duration)/COUNT(DISTINCT passenger_id)
 AS AVG_duration
@@ -149,4 +149,4 @@ SUM(duration) / (SELECT COUNT( DISTINCT passenger_id ) FROM TEMP3 WHERE is_loyal
 AS NOTLOYAL_DURATION_AVG
 FROM TEMP3
 
---6. NOT RECOMMEND the company to continue to invest in expanding loyalty program
+--6. RECOMMEND the company to continue to invest in expanding loyalty program
